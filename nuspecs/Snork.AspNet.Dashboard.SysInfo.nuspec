@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+
+<package>
+  <metadata>
+    <id>Snork.AspNet.Dashboard.SysInfo</id>
+    <version>1.0.5388</version>
+    <authors>Xavier Jefferson</authors>
+    <owners>XavierJefferson</owners>
+    <licenseUrl>https://www.gnu.org/licenses/lgpl-3.0.en.html</licenseUrl>
+    <projectUrl>https://github.com/xavierjefferson/Snork.AspNet.DashboardBuilder</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>This is a plug-in dashboard for ASP.NET applications that outputs a large amount of information about a web application's current state.</summary>
+    <description>This is a plug-in dashboard that outputs a large amount of information about a web application's current state. This includes information about compilation options and extensions, the .NET version, server information and environment, the PHP environment, OS version information, paths, master and local values of configuration options, and HTTP headers.</description>
+    <releaseNotes>
+      Update for when session state is disabled
+    </releaseNotes>
+    <copyright>Copyright © 2018 Xavier Jefferson</copyright>
+    <tags>dashboard system information phpinfo</tags>
+    <dependencies>
+      <dependency id="Snork.AspNet.DashboardBuilder" version="1.0.5388" />
+    </dependencies>
+
+
+  </metadata>
+  <files>
+    <file src="..\src\Snork.AspNetSysInfo\bin\debug\Snork.AspNet.Dashboard.SysInfo.dll" target="lib\net45" />
+ 
+    <file src="..\src\**\*.cs;" target="src" exclude="**\obj*\**\*.cs" />
+  </files>
+</package>
